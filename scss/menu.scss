@@ -1,0 +1,65 @@
+// TODO: Add backgrond blur
+.menu-trigger {
+    position: absolute;
+    top: 3vw;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    background-color: var(--white);
+    height: 100%;
+    width: 0;
+    padding-top: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: var(--transition);
+    z-index: 1;
+
+    .profile {
+        
+        // Profile Image
+        img {
+            border-radius: 50%;
+            width: 50%;
+            // padding-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    // Links
+    a {
+        color: var(--primary-color);
+        display: block;
+        padding: 10px 5%;
+        text-decoration: none;
+        font-size: 18px;
+        transition: var(--transition);
+    
+        &:hover {
+            color: var(--secondary-color);
+        }        
+    }
+
+    // Close btn
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .nav-menu {
+        padding-top: 15px;
+    }
+
+    .nav-menu a {
+        font-size: 18px;
+    }
+}
